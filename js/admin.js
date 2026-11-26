@@ -156,10 +156,10 @@ const tablaClientes = document.getElementById("tablaClientes");
 if (tablaClientes) {
   const claveStorageCli = "usuariosIvan";
   const usuariosDefault = [
-    { usuario: "ivan",    clave: "ivan123",   nombre: "Administrador", rol: "admin" },
-    { usuario: "cliente", clave: "1234",      nombre: "Camila Rojas",  rol: "cliente" },
-    { usuario: "maria",   clave: "maria2026", nombre: "María Quispe",  rol: "cliente" },
-    { usuario: "admin",   clave: "4321",      nombre: "Ivan Pari",     rol: "admin" }
+   { usuario: "ivan",   clave: "ivan123", nombre: "Administrador", rol: "admin" },
+  { usuario: "admin", clave: "admin",     nombre: "admin",  rol: "admin" },
+  { usuario: "dayana",   clave: "dayana",nombre: "Dayana",  rol: "cliente" },
+  { usuario: "jose", clave: "jose",     nombre: "Jose",  rol: "cliente" }
   ];
 
   let usuarios = JSON.parse(sessionStorage.getItem(claveStorageCli)) || usuariosDefault;
